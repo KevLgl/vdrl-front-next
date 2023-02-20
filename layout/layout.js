@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {useState} from "react";
+import Image from "next/image";
 
 export default function Layout({ children }) {
 
@@ -15,7 +16,7 @@ export default function Layout({ children }) {
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
             <a href="/" className="flex items-center">
-                <img src="/Logo.png" className="h-6 mr-3 sm:h-9" alt="VDR-Louviers Logo" />
+                <Image priority src="/Logo.png" width="40" height="50" className="mr-3 w-auto h-auto" alt="VDR-Louviers Logo" />
                 <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">VDR LOUVIERS HB</span>
             </a>
             <button onClick={toggleMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -55,7 +56,7 @@ export default function Layout({ children }) {
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <a href="https://flowbite.com/" className="flex items-center">
-                    <img src="/Logo.png" className="h-6 mr-3 sm:h-9" alt="VDR-Louviers Logo" />
+                    <Image priority src="/Logo.png" width="40" height="50" className="mr-3 w-auto h-auto" alt="VDR-Louviers Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">VDR LOUVIERS HB</span>
                     </a>
                 </div>

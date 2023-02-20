@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function ArticleCard(){
     return (
         <div className="w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
             <a href="#">
-                <img className="rounded-t-lg" src="photo2.jpeg" alt="maillot handball" />
+                <Image width="600" height="600" className="rounded-t-lg" src="/photo2.jpeg" alt="maillot handball" />
             </a>
             <div className="p-5">
                 <a href="#">

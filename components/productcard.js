@@ -1,9 +1,10 @@
+import Image from "next/image";
 export default function ProducCard(){
     return (
 
 <div className="w-56 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
     <a href="#">
-        <img className="p-8 rounded-t-lg" src="maillot.png" alt="product image" />
+        <Image width="600" height="600" className="p-8 rounded-t-lg" src="/maillot.png" alt="product image" />
     </a>
     <div className="px-5 pb-5">
         <a href="#">

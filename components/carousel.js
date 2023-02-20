@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const images = [
-"photo1.jpeg",
-"photo2.jpeg",
-"photo3.jpeg",
+"/photo1.jpeg",
+"/photo2.jpeg",
+"/photo3.jpeg",
 ];
 
 const Carousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
-    const previousImage = () => {
-        setCurrentImage((currentImage - 1 + images.length) % images.length);
-    };
-
-    const nextImage = () => {
-        setCurrentImage((currentImage + 1) % images.length);
-    };
-
     useEffect(() => {
         const interval = setInterval(() => {
-            nextImage();
+            setCurrentImage((currentImage + 1) % images.length);;
         }, 4000);
         return () => clearInterval(interval);
     }, [currentImage]);
@@ -33,10 +26,13 @@ const Carousel = () => {
                 {/*>*/}
                 {/*    &#8592;*/}
                 {/*</button>*/}
-                <img
+                <Image
                     src={images[currentImage]}
-                    alt=""
+                    alt="carousel images"
                     className="w-full h-96 object-cover"
+                    width="800"
+                    height="800"
+                    priority
                 />
                 {/*<button*/}
                 {/*    className="text-gray-500 hover:text-gray-700 focus:outline-none"*/}

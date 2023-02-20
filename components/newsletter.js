@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Newsletter(){
     return (
                 <div className="h-60 text-xs sm:text-sm flex space-x-4 items-center justify-center bg-red-600 w-full p-4">
                     <div className="w-10 md:w-20">
-                    <img className="" src="enveloppe.png"/>
+                    <Image alt="logo enveloppe" width="600" height="600" className="" src="/enveloppe.png"/>
                 </div>
                 <div className=" w-1/2 md w-1/3 text-white">
                     <p>Vous n’êtes toujours pas insrit à la newletter ? </p>
