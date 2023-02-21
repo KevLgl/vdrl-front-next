@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function ArticleCard(){
     return (
-        <div className="w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
+        <div className="w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
             <a href="#">
                 <Image width="600" height="600" className="rounded-t-lg" src="/photo2.jpeg" alt="maillot handball" />
             </a>
-            <div className="p-5">
+            <div className="text-xs p-5">
                 <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Premiere victoire de 2023</h5>
+                    <h5 className="text-sm mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Premiere victoire de 2023</h5>
                 </a>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">La victoire de l'équipe A contre Dieppe </p>
                 <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
