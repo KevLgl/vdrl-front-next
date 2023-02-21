@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function ProducCard(){
     return (
 
-<div className="w-56 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
+<div className="w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
     <a href="#">
         <Image priority width="600" height="600" className="p-8 rounded-t-lg" src="/maillot.png" alt="product image" />
     </a>
@@ -20,7 +20,7 @@ export default function ProducCard(){
         </div>
         <div className="flex items-center justify-between">
             <span className="w-2/4 font-bold text-gray-900 dark:text-white">59€</span>
-            <a href="#" className="w-2/4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center bg-red-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:w-32">Boutique</a>
+            <a href="#" className="text-xs w-3/4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center bg-red-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:w-32">Boutique</a>
         </div>
     </div>
 </div>

@@ -4,7 +4,6 @@ import Carousel from '@/components/carousel'
 import Newsletter from '@/components/newsletter'
 import HomeArticles from "@/components/homearticles";
 import HomeShop from "@/components/homeshop";
-import BigTitle from "@/components/bigtitle";
 
 const inter = Inter({ subsets: ['latin'] })
 
