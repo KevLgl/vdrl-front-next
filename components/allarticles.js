@@ -3,7 +3,7 @@ import BigTitle from "@/components/bigtitle";
 import {fetchArticles} from "@/api/fetcharticles";
 import {useState, useEffect} from "react";
 
-export default function HomeArticles(){
+export default function Allarticles(){
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function HomeArticles(){
             setArticles(articlesData);
         }
         fetchArticlesData();
-    }, []);
+    }, [])
 
     return (<>
             <div className='flex justify-center'>

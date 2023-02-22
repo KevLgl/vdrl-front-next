@@ -42,8 +42,6 @@ export async function getStaticProps(context){
 
     const response = await fetch('http://localhost:1337/graphql', options)
     const responseJson = await response.json();
-    console.log(responseJson);
-
 
     return {
         props: {

@@ -2,10 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ArticleCard({ article }){
+    const coverUrl = article.attributes.cover?.data?.attributes?.url;
+    const imageUrl = coverUrl ? `http://localhost:1337${coverUrl}` : '/photo1.jpeg';
     return (
         <div className="w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-4">
             <a href="#">
-                <Image width="600" height="600" className="rounded-t-lg" src="/photo2.jpeg" alt="maillot handball" />
+                {coverUrl && (
+                    <Image
+                        width={600}
+                        height={600}
+                        className="rounded-t-lg"
+                        src={imageUrl}
+                        alt="maillot handball"
+                    />
+                )}
+                {!coverUrl && (
+                    <Image
+                        width={600}
+                        height={600}
+                        className="rounded-t-lg"
+                        src={imageUrl}
+                        alt="maillot handball"
+                        fallback="/images/default-cover-image.jpg"
+                    />
+                )}
             </a>
             <div className="text-xs p-5">
                 <a href="#">

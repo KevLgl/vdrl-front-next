@@ -2,7 +2,7 @@ import { Inter } from '@next/font/google'
 import Layout from '@/layout/layout'
 import Carousel from '@/components/carousel'
 import Newsletter from '@/components/newsletter'
-import HomeArticles from "@/components/homearticles";
+import Allarticles from "@/components/allarticles";
 import HomeShop from "@/components/homeshop";
 import Link from "next/link";
 import SmallTitle from "@/components/smalltitle";
@@ -14,7 +14,7 @@ export default function Home() {
           <Layout>
             <Carousel>
             </Carousel>
-            <HomeArticles />
+            <Allarticles />
               <div>
                   <Link href="/article">
                       <SmallTitle title="Voir plus" />

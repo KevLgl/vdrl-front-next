@@ -1,9 +1,9 @@
 import Layout from "@/layout/layout"
-import HomeArticles from "@/components/homearticles";
+import Allarticles from "@/components/allarticles";
 export default function Index(){
     return (
         <Layout>
-            <HomeArticles></HomeArticles>
+            <Allarticles></Allarticles>
         </Layout>
     )
 }

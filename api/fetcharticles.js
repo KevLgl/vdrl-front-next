@@ -12,6 +12,13 @@ export async function fetchArticles() {
               id
               attributes {
                 slug
+                cover{
+                    data{
+                        attributes{
+                            url
+                        }   
+                            }   
+                                }
                 title
                 description
                 createdAt
