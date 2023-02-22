@@ -11,6 +11,7 @@ export async function fetchArticles() {
             data {
               id
               attributes {
+                slug
                 title
                 description
                 createdAt
