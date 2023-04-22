@@ -6,6 +6,7 @@ import Allarticles from "@/components/allarticles";
 import HomeShop from "@/components/homeshop";
 import Link from "next/link";
 import SmallTitle from "@/components/smalltitle";
+import HomeSponsors from "@/components/homesponsors";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
                       <SmallTitle title="Voir plus" />
                   </Link>
               </div>
+              <HomeSponsors />
             <Newsletter></Newsletter>
             </Layout>
   )

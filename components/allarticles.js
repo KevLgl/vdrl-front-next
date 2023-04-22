@@ -15,7 +15,7 @@ export default function Allarticles(){
 
     return (<>
             <div className='flex justify-center'>
-                <p className="text-gray-900 font-bold text-3xl my-20">Nos derniers articles</p>
+                <p className="text-gray-900 font-bold text-3xl my-16">Nos derniers articles</p>
             </div>
                 <div className='flex flex-wrap justify-center'>
                                  {articles.map(article => (
