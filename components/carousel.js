@@ -18,41 +18,27 @@ const Carousel = () => {
     }, [currentImage]);
 
     return (
-        <div className="relative w-full mx-auto">
-            <div className="flex items-center justify-center">
-                {/*<button*/}
-                {/*    className="text-gray-500 hover:text-gray-700 focus:outline-none"*/}
-                {/*    onClick={previousImage}*/}
-                {/*>*/}
-                {/*    &#8592;*/}
-                {/*</button>*/}
+        <div className="flex items-center justify-center bg-gray-900">
+            <div className="relative w-full h-96">
                 <Image
                     src={images[currentImage]}
                     alt="carousel images"
-                    className="w-full h-96 object-cover"
-                    width="800"
-                    height="800"
+                    className="w-full h-full object-cover"
+                    layout="fill"
+                    objectFit="cover"
                     priority
                 />
-                {/*<button*/}
-                {/*    className="text-gray-500 hover:text-gray-700 focus:outline-none"*/}
-                {/*    onClick={nextImage}*/}
-                {/*>*/}
-                {/*    &#8594;*/}
-                {/*</button>*/}
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-2">
-                {images.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`inline-block w-3 h-3 mx-2 rounded-full ${
-                            index === currentImage ? "bg-gray-800" : "bg-gray-300"
-                        }`}
-                        onClick={() => setCurrentImage(index)}
-                    ></span>
-                ))}
+                <div className="absolute inset-0 bg-gray-900 opacity-80"></div>
+                <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 z-10 text-center">
+                    <p className="text-white font-bold text-5xl">Enssemble, partageons la même passion</p>
+                    <p className="text-white mb-6">Le handball, bien plus qu'un sport, une source de bien-être pour le corps et l'esprit.</p>
+                    <button type="button"
+                            className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Programme du week-end
+                    </button>
+                </div>
             </div>
         </div>
+
     );
 };
 
