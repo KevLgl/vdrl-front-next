@@ -5,14 +5,14 @@ export default function ArticleCard({ article }){
     const coverUrl = article.attributes.cover?.data?.attributes?.url;
     const imageUrl = coverUrl ? `http://localhost:1337${coverUrl}` : '/photo1.jpeg';
     return (
-        <div className="min-h-[19rem] w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-2">
+        <div className="min-h-[19rem] w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-2">
             <div className="h-[172px] w-full">
             <a href={`/article/${article.attributes.slug}`} className="">
                 {coverUrl && (
                     <Image
                         width={318}
                         height={172}
-                        className="rounded-t-lg h-full object-cover max-w-full"
+                        className=" h-full object-cover max-w-full"
                         src={imageUrl}
                         alt="maillot handball"
                     />
@@ -21,7 +21,7 @@ export default function ArticleCard({ article }){
                     <Image
                         width={318}
                         height={172}
-                        className="rounded-t-lg h-full max-w-full object-cover"
+                        className=" h-full max-w-full object-cover"
                         src={imageUrl}
                         alt="maillot handball"
                         fallback="/images/default-cover-image.jpg"
@@ -37,7 +37,7 @@ export default function ArticleCard({ article }){
                     </a>
                 </div>
                 <div className="flex items-end">
-                    <Link href={`/article/${article.attributes.slug}`} className="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-red-600 rounded-lg hover:bg-red-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-900 dark:hover:bg-gray-900 dark:focus:ring-gray-900">
+                    <Link href={`/article/${article.attributes.slug}`} className="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-red-600 rounded-lg transform hover:scale-110">
                         Lire plus
                         <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                     </Link>

@@ -1,5 +1,4 @@
 import ProducCard from "@/components/productcard";
-import BigTitle from "@/components/bigtitle";
 import Link from "next/link";
 import SmallTitle from "@/components/smalltitle";
 
@@ -8,7 +7,7 @@ export default function HomeShop(){
         <>
             <div className="bg-gray-200 ">
             <div className='flex justify-center'>
-                <BigTitle title="Nos produits" />
+                <p className="text-gray-900 font-bold text-3xl my-20">Nos articles</p>
             </div>
             <div className='flex flex-wrap justify-center'>
                 <ProducCard></ProducCard>

@@ -1,5 +1,4 @@
 import ArticleCard from "@/components/articlecard";
-import BigTitle from "@/components/bigtitle";
 import {fetchArticles} from "@/api/fetcharticles";
 import {useState, useEffect} from "react";
 
@@ -16,7 +15,7 @@ export default function Allarticles(){
 
     return (<>
             <div className='flex justify-center'>
-                <BigTitle title="Nos articles" />
+                <p className="text-gray-900 font-bold text-3xl my-20">Nos derniers articles</p>
             </div>
                 <div className='flex flex-wrap justify-center'>
                                  {articles.map(article => (

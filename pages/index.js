@@ -20,7 +20,6 @@ export default function Home() {
                       <SmallTitle title="Voir plus" />
                   </Link>
               </div>
-            <HomeShop />
             <Newsletter></Newsletter>
             </Layout>
   )
