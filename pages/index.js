@@ -7,6 +7,8 @@ import HomeShop from "@/components/homeshop";
 import Link from "next/link";
 import SmallTitle from "@/components/smalltitle";
 import HomeSponsors from "@/components/homesponsors";
+import HomeDevenirSponsors from "@/components/homedevenirsponsors";
+import HomePartenairePublic from "@/components/homepartenairepublic";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +24,9 @@ export default function Home() {
                   </Link>
               </div>
               <HomeSponsors />
+              <HomeDevenirSponsors />
             <Newsletter></Newsletter>
+            <HomePartenairePublic />
             </Layout>
   )
 }
