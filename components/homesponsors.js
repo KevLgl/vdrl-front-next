@@ -10,11 +10,11 @@ export default function HomeSponsors(){
             <div className="flex item-center justify-center mb-6">
                 <div className="text-white">
                     <p className="font-bold text-3xl mt-4">Les entreprises qui nous font confiances </p>
-                    <p>Enorme merci aux entreprise qui nous accompagner pour mener notre projet commun</p>
+                    <p>Enorme merci aux entreprises qui nous accompagnent pour mener notre projet commun</p>
                 </div>
             </div>
-            <div className="flex justify-around	">
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+            <div className="flex justify-around">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -24,7 +24,7 @@ export default function HomeSponsors(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -34,7 +34,7 @@ export default function HomeSponsors(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -44,7 +44,7 @@ export default function HomeSponsors(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -54,7 +54,6 @@ export default function HomeSponsors(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-
             </div>
         </div>
     )

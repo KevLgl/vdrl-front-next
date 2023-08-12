@@ -13,7 +13,7 @@ export default function HomePartenairePublic(){
                 </div>
             </div>
             <div className="flex justify-around	">
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -23,7 +23,7 @@ export default function HomePartenairePublic(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -33,7 +33,7 @@ export default function HomePartenairePublic(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={100}
                         height={150}
@@ -43,7 +43,7 @@ export default function HomePartenairePublic(){
                         fallback="/images/default-cover-image.jpg"
                     />
                 </div>
-                <div className="bg-gray-800 h-20 w-36 flex justify-center items-center">
+                <div className="bg-gray-800 h-20 w-24 sm:w-36 flex justify-center items-center px-3">
                     <Image
                         width={60}
                         height={70}

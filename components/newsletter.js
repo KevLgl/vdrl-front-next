@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Newsletter(){
     return (
-            <div className="h-60 text-xs sm:text-sm bg-gray-900 w-full p-4">
+            <div className="h-60 text-xs sm:text-sm bg-gray-900 w-full p-4 pt-8">
                 <div className="flex item-center justify-center mb-6">
                     <div className="w-10 md:w-20 mr-4">
                         <div>

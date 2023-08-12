@@ -5,7 +5,7 @@ export default function ArticleCard({ article }){
     const coverUrl = article.attributes.cover?.data?.attributes?.url;
     const imageUrl = coverUrl ? `http://localhost:1337${coverUrl}` : '/photo1.jpeg';
     return (
-        <div className="min-h-[19rem] w-36 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-2">
+        <div className="min-h-[19rem] w-40 lg:w-64 xl:w-80 max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 mx-6 my-2">
             <div className="h-[172px] w-full">
             <a href={`/article/${article.attributes.slug}`} className="">
                 {coverUrl && (
